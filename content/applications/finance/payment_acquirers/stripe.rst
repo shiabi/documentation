@@ -133,7 +133,7 @@ To set it up, enable the :guilabel:`Capture Amount Manually` option on Odoo, as 
    payment if unsupported payment methods are selected.
 
 .. caution::
-   Odoo doesn't support the partial capture yet. Be aware that a partial capture from Stripe's 
+   Odoo doesn't support the partial capture yet. Be aware that a partial capture from Stripe's
    interface is still managed as a full capture by Odoo.
 
 .. seealso::
@@ -171,3 +171,18 @@ listed, you don't have anything to do.
 
 .. seealso::
    - :doc:`../payment_acquirers`
+
+.. _stripe/express-checkout:
+
+Using Express checkout
+======================
+
+Configure Apple Pay
+-------------------
+
+To enable the Apple Pay button with Stripe, you have to register your website on Stripe. To do so,
+go to :menuselection:`Payment Acquirers --> Stripe` and check that the acquirer is **enabled**. If
+it's the case, a **register your domain** button should appears. Click on it to register your domain.
+
+.. note::
+   You have to repeat this operation if you change your domain name later.
