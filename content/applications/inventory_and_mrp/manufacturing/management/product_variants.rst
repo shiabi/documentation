@@ -6,7 +6,7 @@ Odoo allows one bill of materials to be used for multiple variants of the same p
 consolidated BoM for a product with variants saves time by preventing the need to manage multiple
 BoMs. To activate variants, simply navigate to :menuselection:`Inventory --> Configuration -->
 Settings --> Variants`. For more information on configuring product variants, refer to `this page
-<https://bit.ly/3PZyzDC>`. 
+<https://bit.ly/3PZyzDC>`_. 
 
 .. image:: product_variants/inventory-variants-settings.png
    :align: center
