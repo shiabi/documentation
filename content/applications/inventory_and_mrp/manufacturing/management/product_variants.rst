@@ -1,35 +1,35 @@
-=======================
-Variants BOM Management
-=======================
+==================================
+Managing BoMs for product variants
+==================================
 
-Odoo allows you to use one bill of materials for multiple variants of
-the same product. To activate variants, simply go to :menuselection:`Configuration --> Settings
---> Variants`.
+Odoo allows one bill of materials to be used for multiple variants of the same product. Having a
+consolidated BoM for a product with variants saves time by preventing the need to manage multiple
+BoMs. To activate variants, simply navigate to :menuselection:`Inventory --> Configuration -->
+Settings --> Variants`. For more information on configuring product variants, refer to `this page
+<https://bit.ly/3PZyzDC>`. 
 
-.. image:: product_variants/bom-variants1.png
-    :align: center
+.. image:: product_variants/inventory-variants-settings.png
+   :align: center
+   :alt: Selecting "Variants" from Inventory app settings. 
 
-You will then be able to specify which BOM component lines are to be used in
-the manufacture of each product variant. You may specify multiple
-variants for each line. If no variant is specified on a component line,
-then this component will be used in the BOM of all variants. 
+Next, create a new product variant BoM or edit an existing one by going to
+:menuselection:`Manufacturing --> Products --> Bills of Materials`. The option to assign components
+to specific product variants on the bill of materials is available once variants are fully
+configured. If the :guilabel:`Apply on Variants` field is not immediately visible, activate it from
+the kebab menu. 
 
-When defining variant BoMs on a line-item-basis, the **Product
-Variant** field in the main section of the BoM should be left blank as shown 
-below. This field is used when creating a BoM for one specific variant
-of a product only.
+.. image:: product_variants/variants-kebab-menu.png
+   :align: center
+   :alt: "Apply on Variants" option on the kebab menu. 
 
+Each component can be assigned to multiple variants. Components with no variants specified are used
+in every variant of the product. The same principle applies when configuring operations and
+by-products. 
 
-.. image:: product_variants/kit-bom1.png
-    :align: center
+.. image:: product_variants/apply-on-variants-bom.png
+   :align: center
+   :alt: Applying components to multiple variants. 
 
-Note that the same principle applies for the configuration 
-of operations.
-
-.. image:: product_variants/kit-bom2.png
-    :align: center
-
-And for the production of by-products. 
-
-.. image:: product_variants/kit-bom3.png
-    :align: center
+When defining variant BoMs by component assignment, the :guilabel:`Product Variant` field in the
+main section of the BoM should be left blank, as shown above. This field is used only when creating
+a BoM specifically for one product variant. 
